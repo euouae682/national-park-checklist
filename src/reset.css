@@ -1,0 +1,11 @@
+/* CSS Reset */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-size: 100%;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
