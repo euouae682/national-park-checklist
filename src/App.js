@@ -1,13 +1,13 @@
-import Header from './components/Header.js';
-import Footer from './components/Footer.js';
-import Main from './components/Main.js';
+import Header from './components/common/Header.js';
+import Footer from './components/common/Footer.js';
+import Main from './components/common/Main.js';
 
 function App() {
   return (
     <div className="App">
-      <Header text="national park checklist" />
+      <Header text="National Park Checklist" />
       <Main />
-      <Footer text="a project" />
+      <Footer text="A project by euouae" />
     </div>
   );
 }
