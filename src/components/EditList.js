@@ -2,7 +2,11 @@ import React from 'react'
 
 export const EditList = () => {
   return (
-    <div>EditList</div>
+    <aside className="editlist">
+      <h1>
+        EditList
+      </h1>
+    </aside>
   )
 }
 

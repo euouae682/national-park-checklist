@@ -2,7 +2,11 @@ import React from 'react'
 
 export const Settings = () => {
   return (
-    <div>Settings</div>
+    <aside className="settings">
+      <h1>
+        Settings
+      </h1>
+    </aside>
   )
 }
 

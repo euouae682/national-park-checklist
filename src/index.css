@@ -1,5 +1,4 @@
 /* Body styles */
-
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -27,6 +26,12 @@ footer {
   height: 2em;
 }
 
+/* Main styles */
+main {
+  display: flex;
+}
+
+/* Park styles */
 li {
   display: block;
   width: 60%;
@@ -41,4 +46,41 @@ li h1 {
 
 li h2 {
   font-size: 1em;
+}
+
+li.uv {
+  border-right: 1em solid red;
+}
+
+li.pv {
+  border-right: 1em solid yellow;
+}
+
+li.v {
+  border-right: 1em solid green;
+}
+
+/* Aside styles */
+aside {
+  width: 20%;
+  border: 0.5em solid darkgreen;
+  text-align: center;
+  height: 6em;
+  padding: 2em;
+  margin-top: 4em;
+}
+
+aside h1 {
+  color: darkgreen;
+  font-size: 2em;
+}
+
+/* EditList styles */
+.editlist {
+  float: left;
+}
+
+/* Settings styles */
+.settings {
+  float: right;
 }
