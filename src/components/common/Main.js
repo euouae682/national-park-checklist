@@ -17,7 +17,7 @@ export const Main = () => {
             <Park name="Biscayne National Park" location="Florida" pstatus="uv" />
             <Park name="Yellowstone National Park" location="Idaho, Montana, Wyoming" pstatus="pv" />
             <Park name="Grand Canyon National Park" location="Arizona" pstatus="v" />
-            <Park name="Redwood National Park" location="California" pstatus="v" />
+            <Park name="Redwood State and National Parks" location="California" pstatus="v" />
             <Park name="Black Rock Desert-High Rock Canyon Emigrant Trails National Conservation Area" location="Nevada" pstatus="pv" />
             <Park name="Devil's Tower National Monument" location="Wyoming" pstatus="v" />
             <Park name="Aniakchak National Monument" location="Alaska" pstatus="uv" />
