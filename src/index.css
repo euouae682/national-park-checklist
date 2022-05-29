@@ -26,15 +26,28 @@ footer {
   height: 2em;
 }
 
+/* Text styles */
+h2 {
+  font-size: 2em;
+  padding: 10px;
+  text-align: center;
+  text-decoration: underline;
+}
+
 /* Main styles */
 main {
   display: flex;
 }
 
+/* List styles */
+ul {
+  display: block;
+}
+
 /* Park styles */
 li {
-  display: block;
-  width: 60%;
+  display: flex;
+  width: 85%;
   border: 0.2em black solid;
   margin: 1em auto;
   padding: 1em;
@@ -46,6 +59,9 @@ li h1 {
 
 li h2 {
   font-size: 1em;
+  padding: 0px;
+  text-align: left;
+  text-decoration: none;
 }
 
 li.uv {
@@ -58,6 +74,14 @@ li.pv {
 
 li.v {
   border-right: 1em solid green;
+}
+
+/* Button styles */
+button {
+  float: right;
+  width: 3em;
+  height: 3em;
+  margin: 10px;
 }
 
 /* Aside styles */
@@ -83,4 +107,9 @@ aside h1 {
 /* Settings styles */
 .settings {
   float: right;
+}
+
+/* Debug styles */
+*, *::before, *::after {
+  border: red;
 }

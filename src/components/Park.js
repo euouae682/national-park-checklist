@@ -5,8 +5,12 @@ export const Park = ({ name, location, pstatus }) => {
 
     return (
         <li className={status}>
-           <h1>{ name }</h1>
-           <h2>{ location }</h2>
+           <div className="parkInfo">
+               <h1>{ name }</h1>
+               <h2>{ location }</h2>
+            </div>
+            <button>More Info</button>
+            <button>Change Status</button>
         </li>
     )
 }
