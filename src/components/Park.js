@@ -1,7 +1,14 @@
 import { useState } from 'react'
+import MoreInfo from './MoreInfo.js';
 
 export const Park = ({ name, location, pstatus }) => {
     const [status, setStatus] = useState(pstatus);
+    const [showMore, setShowMore] = useState(false);
+
+    const showMoreInfo = () => {
+        console.log("clicked");
+        setShowMore(!showMore);
+    }
 
     return (
         <li className={status}>
@@ -9,8 +16,11 @@ export const Park = ({ name, location, pstatus }) => {
                <h1>{ name }</h1>
                <h2>{ location }</h2>
             </div>
-            <button>More Info</button>
-            <button>Change Status</button>
+            <div className="buttons">
+                <button onClick={showMoreInfo} >More Info</button>
+                <button>Change Status</button>
+            </div>
+            {showMore && <MoreInfo />}
         </li>
     )
 }

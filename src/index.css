@@ -46,11 +46,12 @@ ul {
 
 /* Park styles */
 li {
-  display: flex;
   width: 85%;
+  height: 8em;
   border: 0.2em black solid;
-  margin: 1em auto;
   padding: 1em;
+  list-style: none;
+  margin: auto;
 }
 
 li h1 {
@@ -77,11 +78,22 @@ li.v {
 }
 
 /* Button styles */
+.parkInfo {
+  width: 80%;
+  float: left;
+  overflow-x: hidden;
+}
+
 button {
-  float: right;
-  width: 3em;
-  height: 3em;
+  width: 3.5em;
+  height: 3.5em;
   margin: 10px;
+  float: right;
+}
+
+.buttons {
+  width: 16%;
+  float: right;
 }
 
 /* Aside styles */
@@ -110,6 +122,6 @@ aside h1 {
 }
 
 /* Debug styles */
-*, *::before, *::after {
-  border: red;
-}
+/* *, *::before, *::after {
+  border: 1px solid red;
+} */
