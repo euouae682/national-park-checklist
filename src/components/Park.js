@@ -11,17 +11,19 @@ export const Park = ({ name, location, pstatus }) => {
     }
 
     return (
-        <li className={status}>
-           <div className="parkInfo">
-               <h1>{ name }</h1>
-               <h2>{ location }</h2>
-            </div>
-            <div className="buttons">
-                <button onClick={showMoreInfo} >More Info</button>
-                <button>Change Status</button>
-            </div>
+        <div className="container">
+            <li className={status}>
+                <div className="parkInfo">
+                    <h1>{ name }</h1>
+                    <h2>{ location }</h2>
+                </div>
+                <div className="buttons">
+                    <button onClick={showMoreInfo} >More Info</button>
+                    <button>Change Status</button>
+                    </div>
             {showMore && <MoreInfo />}
-        </li>
+            </li>
+        </div>
     )
 }
 

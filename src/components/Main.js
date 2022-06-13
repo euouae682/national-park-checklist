@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
-import Park from '../Park.js';
-import EditList from '../EditList';
-import Settings from '../Settings.js';
+import Park from './Park.js';
+import EditList from './EditList';
+import Settings from './Settings.js';
 
 export const Main = () => {
   const sortParks = () => {
@@ -12,7 +12,6 @@ export const Main = () => {
 
   return (
     <main>
-      <EditList />
       <div class="lists">
         <h2>Unvisited Parks</h2>
         <ul>
@@ -32,7 +31,6 @@ export const Main = () => {
           <Park name="Devil's Tower National Monument" location="Wyoming" pstatus="v" />
         </ul>
       </div>
-      <Settings />
     </main>
   )
 }

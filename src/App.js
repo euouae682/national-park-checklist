@@ -1,6 +1,6 @@
 import Header from './components/common/Header.js';
 import Footer from './components/common/Footer.js';
-import Main from './components/common/Main.js';
+import Main from './components/Main.js';
 
 function App() {
   return (

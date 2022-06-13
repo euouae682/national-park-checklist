@@ -8,11 +8,16 @@ body {
 
 /* Header and footer styles */
 header, footer {
-  background-color: green;
   color: white;
   text-align: center;
   width: 100%;
+}
+
+header h1 {
+  background-color: green;
   padding: 10px;
+  height: 3em;
+  line-height: 3em;
 }
 
 header {
@@ -24,6 +29,25 @@ footer {
   /* position: fixed; */
   bottom: 0;
   height: 2em;
+}
+
+/* Navbar styles */
+
+nav ul {
+  background-color: rgb(0, 148, 0);
+  height: 2em;
+  line-height: 2em;
+  font-size: 30px;
+}
+
+nav ul li {
+  display: inline-block;
+  text-align: center;
+  width: 50%;
+}
+
+nav ul li:hover {
+  background-color: rgb(0, 173, 0);
 }
 
 /* Text styles */
@@ -45,7 +69,15 @@ ul {
 }
 
 /* Park styles */
-li {
+.lists {
+  margin: auto;
+}
+
+.container {
+  padding: 0.5em 1em;
+}
+
+.container li {
   width: 85%;
   height: 8em;
   border: 0.2em black solid;
@@ -54,26 +86,26 @@ li {
   margin: auto;
 }
 
-li h1 {
+.container li h1 {
   font-size: 2em;
 }
 
-li h2 {
+.container li h2 {
   font-size: 1em;
   padding: 0px;
   text-align: left;
   text-decoration: none;
 }
 
-li.uv {
+.container li.uv {
   border-right: 1em solid red;
 }
 
-li.pv {
+.container li.pv {
   border-right: 1em solid yellow;
 }
 
-li.v {
+.container li.v {
   border-right: 1em solid green;
 }
 
@@ -84,15 +116,15 @@ li.v {
   overflow-x: hidden;
 }
 
-button {
-  width: 3.5em;
-  height: 3.5em;
-  margin: 10px;
+.buttons {
+  width: 16%;
   float: right;
 }
 
-.buttons {
-  width: 16%;
+.buttons button {
+  width: 3.5em;
+  height: 3.5em;
+  margin: 10px;
   float: right;
 }
 
