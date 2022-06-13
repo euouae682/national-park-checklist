@@ -1,10 +1,18 @@
 export const Header = ({ text }) => {
+  const toggleEditList = () => {
+    console.log("this opens the list");
+  }
+
+  const toggleSettings = () => {
+    console.log("this opens the settings");
+  }
+
   return <header>
       <h1>{ text }</h1>
       <nav>
         <ul>
-          <li>Edit List</li>
-          <li>Settings</li>
+          <li onClick={toggleEditList} >Edit List</li>
+          <li onClick={toggleSettings} >Settings</li>
         </ul>
       </nav>
   </header>;

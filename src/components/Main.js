@@ -1,7 +1,4 @@
-import { useEffect } from 'react'
 import Park from './Park.js';
-import EditList from './EditList';
-import Settings from './Settings.js';
 
 export const Main = () => {
   const sortParks = () => {
