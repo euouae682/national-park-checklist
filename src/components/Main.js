@@ -2,8 +2,6 @@ import { useState } from 'react'
 import Park from './Park.js';
 
 export const Main = () => {
-  const [parkList, setParkList] = useState();
-
   return (
     <main>
       <div class="lists">
