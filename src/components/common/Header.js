@@ -13,6 +13,8 @@ export const Header = ({ text }) => {
         <ul>
           <li onClick={toggleEditList} >Edit List</li>
           <li onClick={toggleSettings} >Settings</li>
+          <li>About</li>
+          <li>Log In</li>
         </ul>
       </nav>
   </header>;

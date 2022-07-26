@@ -43,7 +43,7 @@ nav ul {
 nav ul li {
   display: inline-block;
   text-align: center;
-  width: 50%;
+  width: 25%;
 }
 
 nav ul li:hover {
