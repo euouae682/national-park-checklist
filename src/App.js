@@ -6,7 +6,7 @@ import Main from './components/Main.js';
 import Settings from './components/Settings.js';
 
 function App() {
-  const [parkList, setParkList] = useState();
+  const [parkList, setParkList] = useState([]);
   const [showEdit, setShowEdit] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
 
@@ -14,8 +14,10 @@ function App() {
     console.log("this updates the parks");
   }
 
-  const onSubmitEdit = () => {
-    console.log("this edits the list")
+  const onSubmitEdit = (pname, ploc) => {
+    setParkList([...parkList, {"name": pname, "location": ploc, "status": 0}]);
+
+    console.log(parkList);
   }
 
   const toggleEdit = () => {
@@ -32,8 +34,8 @@ function App() {
     <div className="App">
       <Header text="National Park Checklist" toggleEdit={toggleEdit} toggleSettings={toggleSettings} />
       <div className="flex">
-        {showEdit && <EditList />}
-        <Main />
+        {showEdit && <EditList onSubmitEdit={onSubmitEdit} />}
+        <Main list={parkList} />
         {showSettings && <Settings />}
       </div>
       <Footer text="A project by euouae" />
