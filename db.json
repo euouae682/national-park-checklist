@@ -1,52 +1,58 @@
 {
   "parks": [
-      {
-          "id": 1,
-          "name": "Biscayne National Park",
-          "location": "Florida",
-          "status": "0"
-      },
-      {
-          "id": 2,
-          "name": "Yellowstone National Park",
-          "location": "Idaho, Montana, Wyoming",
-          "status": "1"
-      },
-      {
-          "id": 3,
-          "name": "Grand Canyon National Park",
-          "location": "Arizona",
-          "status": "2"
-      },
-      {
-          "id": 4,
-          "name": "Redwood State and National Parks",
-          "location": "California",
-          "status": "2"
-      },
-      {
-          "id": 5,
-          "name": "Black Rock Desert-High Rock Canyon Emigrant Trails National Conservation Area",
-          "location": "Nevada",
-          "status": "0"
-      },
-      {
-          "id": 6,
-          "name": "Devil's Tower National Monument",
-          "location": "Wyoming",
-          "status": "2"
-      },
-      {
-          "id": 7,
-          "name": "Aniakchak National Monument",
-          "location": "Alaska",
-          "status": "0"
-      },
-      {
-          "id": 8,
-          "name": "Black Canyon of the Gunnison National Park",
-          "location": "Colorado",
-          "status": "1"
-      }
+    {
+      "id": 1,
+      "name": "Biscayne National Park",
+      "location": "Florida",
+      "status": "0"
+    },
+    {
+      "id": 2,
+      "name": "Yellowstone National Park",
+      "location": "Idaho, Montana, Wyoming",
+      "status": "1"
+    },
+    {
+      "id": 3,
+      "name": "Grand Canyon National Park",
+      "location": "Arizona",
+      "status": "2"
+    },
+    {
+      "id": 4,
+      "name": "Redwood State and National Parks",
+      "location": "California",
+      "status": "2"
+    },
+    {
+      "id": 5,
+      "name": "Black Rock Desert-High Rock Canyon Emigrant Trails National Conservation Area",
+      "location": "Nevada",
+      "status": "0"
+    },
+    {
+      "id": 6,
+      "name": "Devil's Tower National Monument",
+      "location": "Wyoming",
+      "status": "2"
+    },
+    {
+      "id": 7,
+      "name": "Aniakchak National Monument",
+      "location": "Alaska",
+      "status": "0"
+    },
+    {
+      "id": 8,
+      "name": "Black Canyon of the Gunnison National Park",
+      "location": "Colorado",
+      "status": "1"
+    },
+    {
+      "name": "Bears Ears National Monument",
+      "location": "Utah",
+      "status": 0,
+      "id": 9
+    }
   ]
 }

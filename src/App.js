@@ -26,18 +26,25 @@ function App() {
     return data;
   }
 
-  // const fetchData = async () => {
-  //   const res = await fetch('http://localhost:5000/parks')
-  //   const data = await res.json()
+  const addPark = async (park) => {
+    const res = await fetch('http://localhost:5000/parks', {
+      method: 'POST',
+      headers: {
+        'Content-type': 'application/json'
+      },
+      body: JSON.stringify(park)
+    });
 
-  //   return data
-  // }
+    const data = await res.json()
 
-  const onSubmitEdit = (pname, ploc) => {
-    setParkList([...parkList, {"name": pname, "location": ploc, "status": 0}]);
-
-    console.log(parkList);
+    setParkList([...parkList, data])
   }
+
+  // const onSubmitEdit = (pname, ploc) => {
+  //   setParkList([...parkList, {"name": pname, "location": ploc, "status": 0}]);
+
+  //   console.log(parkList);
+  // }
 
   const toggleEdit = () => {
     setShowEdit(!showEdit);
@@ -53,7 +60,7 @@ function App() {
     <div className="App">
       <Header text="National Park Checklist" toggleEdit={toggleEdit} toggleSettings={toggleSettings} />
       <div className="flex">
-        {showEdit && <EditList onSubmitEdit={onSubmitEdit} />}
+        {showEdit && <EditList onSubmitEdit={addPark} />}
         <Main list={parkList} />
         {showSettings && <Settings />}
       </div>

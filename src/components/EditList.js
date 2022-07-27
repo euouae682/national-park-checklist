@@ -16,7 +16,7 @@ export const EditList = ({ onSubmitEdit }) => {
       return
     }
 
-    onSubmitEdit(pname, ploc);
+    onSubmitEdit({"name": pname, "location": ploc, "status": 0});
 
     setPname('');
     setPloc('');
