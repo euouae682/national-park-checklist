@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Header from './components/common/Header.js';
 import Footer from './components/common/Footer.js';
 import EditList from './components/EditList.js';
@@ -10,9 +10,28 @@ function App() {
   const [showEdit, setShowEdit] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
 
-  const updateParks = () => {
-    console.log("this updates the parks");
+  useEffect(() => {
+    const getParks = async () => {
+      const parksFromServer = await fetchData();
+      setParkList(parksFromServer);
+    }
+
+    getParks();
+  }, [])
+
+  const fetchData = async () => {
+    const res = await fetch('http://localhost:5000/parks');
+    const data = await res.json();
+
+    return data;
   }
+
+  // const fetchData = async () => {
+  //   const res = await fetch('http://localhost:5000/parks')
+  //   const data = await res.json()
+
+  //   return data
+  // }
 
   const onSubmitEdit = (pname, ploc) => {
     setParkList([...parkList, {"name": pname, "location": ploc, "status": 0}]);

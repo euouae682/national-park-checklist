@@ -3,42 +3,50 @@
       {
           "id": 1,
           "name": "Biscayne National Park",
-          "location": "Florida"
+          "location": "Florida",
+          "status": "0"
       },
       {
           "id": 2,
           "name": "Yellowstone National Park",
-          "location": "Idaho, Montana, Wyoming"
+          "location": "Idaho, Montana, Wyoming",
+          "status": "1"
       },
       {
           "id": 3,
           "name": "Grand Canyon National Park",
-          "location": "Arizona"
+          "location": "Arizona",
+          "status": "2"
       },
       {
           "id": 4,
           "name": "Redwood State and National Parks",
-          "location": "California"
+          "location": "California",
+          "status": "2"
       },
       {
           "id": 5,
           "name": "Black Rock Desert-High Rock Canyon Emigrant Trails National Conservation Area",
-          "location": "Nevada"
+          "location": "Nevada",
+          "status": "0"
       },
       {
           "id": 6,
           "name": "Devil's Tower National Monument",
-          "location": "Wyoming"
+          "location": "Wyoming",
+          "status": "2"
       },
       {
           "id": 7,
           "name": "Aniakchak National Monument",
-          "location": "Alaska"
+          "location": "Alaska",
+          "status": "0"
       },
       {
           "id": 8,
           "name": "Black Canyon of the Gunnison National Park",
-          "location": "Colorado"
+          "location": "Colorado",
+          "status": "1"
       }
   ]
 }
