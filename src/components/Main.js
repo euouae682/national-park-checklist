@@ -5,7 +5,7 @@ export const Main = ({ list }) => {
   return (
     <main>
       <div class="lists">
-        <h2>Unvisited Parks</h2>
+        <h2>Park List</h2>
         <ul>
           {list.map((park) => (
             <Park key={list.indexOf(park)} name={park["name"]} location={park["location"]} pstatus={park["status"]} />

@@ -3,9 +3,9 @@ import React from 'react'
 export const Settings = () => {
   return (
     <aside className="settings">
-      <h1>
+      <h2>
         Settings
-      </h1>
+      </h2>
     </aside>
   )
 }

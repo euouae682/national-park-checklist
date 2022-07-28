@@ -24,10 +24,9 @@ export const EditList = ({ onSubmitEdit }) => {
 
   return (
     <aside className="editlist">
-      <h2>
-        Add a New Park
-      </h2>
+      <h2>Edit List</h2>
       <form onSubmit={onSubmit}>
+        <h2>Add a New Park</h2>
         <label htmlFor="pname">Park Name</label>
         <input type="text" id="pname" name="pname" value={pname} onChange={(e) => setPname(e.target.value)} /><br />
         <label htmlFor="ploc">Park Location</label>
