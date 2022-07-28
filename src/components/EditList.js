@@ -25,11 +25,8 @@ export const EditList = ({ onSubmitEdit }) => {
   return (
     <aside className="editlist">
       <h2>
-        Edit List
-      </h2> 
-      <h3>
         Add a New Park
-      </h3>
+      </h2>
       <form onSubmit={onSubmit}>
         <label htmlFor="pname">Park Name</label>
         <input type="text" id="pname" name="pname" value={pname} onChange={(e) => setPname(e.target.value)} /><br />
@@ -37,6 +34,7 @@ export const EditList = ({ onSubmitEdit }) => {
         <input type="text" id="ploc" name="ploc" value={ploc} onChange={(e) => setPloc(e.target.value)} /><br />
         <input type="submit" value="Submit" />
       </form>
+      <br />
     </aside>
   )
 }

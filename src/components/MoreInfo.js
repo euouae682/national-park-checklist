@@ -1,7 +1,9 @@
-export const MoreInfo = () => {
+export const MoreInfo = ({ deletePark }) => {
   return (
     <div>
-      <h1>MoreInfo</h1>
+      <button onClick={deletePark}>
+        Delete Park from List
+      </button>
     </div>
   )
 }

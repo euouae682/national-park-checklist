@@ -40,6 +40,10 @@ function App() {
     setParkList([...parkList, data])
   }
 
+  const deletePark = async (park) => {
+    console.log("this will delete the park from the list");
+  }
+
   // const onSubmitEdit = (pname, ploc) => {
   //   setParkList([...parkList, {"name": pname, "location": ploc, "status": 0}]);
 

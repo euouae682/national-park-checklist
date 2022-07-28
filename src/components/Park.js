@@ -26,10 +26,10 @@ export const Park = ({ name, location, pstatus }) => {
                     <h2>{ location }</h2>
                 </div>
                 <div className="buttons">
-                    {/* <button onClick={showMoreInfo} >More Info</button> */}
+                    <button onClick={showMoreInfo} >More Info</button>
                     <button onClick={toggleStatus}>Change Status</button>
                     </div>
-            {/* {showMore && <MoreInfo />} */}
+            {showMore && <MoreInfo />}
             </li>
         </div>
     )
