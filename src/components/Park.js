@@ -28,8 +28,8 @@ export const Park = ({ name, location, pstatus }) => {
                 <div className="buttons">
                     <button onClick={showMoreInfo} >More Info</button>
                     <button onClick={toggleStatus}>Change Status</button>
-                    </div>
-            {showMore && <MoreInfo />}
+                </div>
+                {showMore && <MoreInfo />}
             </li>
         </div>
     )

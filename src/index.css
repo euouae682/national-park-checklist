@@ -64,7 +64,7 @@ ul {
 }
 
 .container li {
-  width: 85%;
+  width: 90%;
   min-height: 9em;
   border: 0.2em black solid;
   padding: 1em;
@@ -95,6 +95,8 @@ ul {
 .container li.v {
   border-right: 1em solid green;
 }
+
+
 
 /* Button styles */
 .parkInfo {
@@ -136,7 +138,7 @@ aside {
 }
 
 button {
-  background-color: #4CAF50; /* Green */
+  background-color: #4CAF50;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -223,5 +225,3 @@ form {
     background-color: #b7ff9f;
     padding: 20px;
 }
-
-

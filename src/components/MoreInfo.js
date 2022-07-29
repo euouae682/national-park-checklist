@@ -1,6 +1,6 @@
 export const MoreInfo = ({ deletePark }) => {
   return (
-    <div>
+    <div className="moreInfo">
       <button onClick={deletePark}>
         Delete Park from List
       </button>
