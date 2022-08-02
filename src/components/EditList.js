@@ -31,7 +31,7 @@ export const EditList = ({ onSubmitEdit }) => {
         <input type="text" id="pname" name="pname" value={pname} onChange={(e) => setPname(e.target.value)} /><br />
         <label htmlFor="ploc">Park Location</label>
         <input type="text" id="ploc" name="ploc" value={ploc} onChange={(e) => setPloc(e.target.value)} /><br />
-        <input type="submit" value="Submit" />
+        <input type="submit" value="Add" />
       </form>
       <br />
     </aside>
