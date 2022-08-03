@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 /* Body styles */
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -66,8 +68,8 @@ header nav li:hover {
 
 /* Main styles */
 main {
-  display: flex;
   background-color: rgb(234, 255, 231);
+  width: 100%;
   padding: 2em;
 }
 
@@ -160,6 +162,7 @@ aside {
 
 .flex {
   display: flex;
+  width: 100%;
 }
 
 button {
