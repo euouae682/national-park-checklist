@@ -11,4 +11,5 @@ NOTE: The project is currently in a very primitive form, so functionality and do
 ## Technologies Used
 
 React 17.0.2
+
 JSON-server 0.17.0
