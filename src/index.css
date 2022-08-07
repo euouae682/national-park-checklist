@@ -8,20 +8,26 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-footer {
-  background-color: rgb(23, 139, 0);
-  padding: 0 15px;
-  bottom: 0;
-  height: 2em;
-  line-height: 2em;
-  color: rgb(234, 255, 231);
-}
-
-/* Text styles */
+/* Global Text styles */
 h2 {
   font-size: 2em;
   padding: 10px;
   text-align: center;
+}
+
+/* Global Button styles */
+button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 200px;
 }
 
 /* Header styles */
@@ -66,7 +72,23 @@ header nav li:hover {
   background-color: rgb(29, 173, 0);
 }
 
+/* Footer styles */
+footer {
+  background-color: rgb(23, 139, 0);
+  padding: 0 15px;
+  bottom: 0;
+  height: 2em;
+  line-height: 2em;
+  color: rgb(234, 255, 231);
+}
+
 /* Main styles */
+.flex {
+  display: flex;
+  width: 100%;
+  min-height: calc(100vh - 70px - 2em)
+}
+
 main {
   background-color: rgb(234, 255, 231);
   min-height: 100%;
@@ -75,6 +97,10 @@ main {
 }
 
 /* List styles */
+.lists {
+  margin: auto;
+}
+
 ul {
   display: block;
 }
@@ -85,10 +111,6 @@ ul > p {
 }
 
 /* Park styles */
-.lists {
-  margin: auto;
-}
-
 .container {
   padding: 0.5em 1em;
 }
@@ -130,25 +152,27 @@ li div {
   display: inline-block;
 }
 
-/* Button styles */
+/* Park info styles */
 .parkInfo {
   width: 80%;
   float: left;
   overflow-x: hidden;
 }
 
+/* Park button styles */
 .buttons {
   width: 16%;
   float: right;
 }
 
+/* Park more info styles */
 .moreInfo {
   width: 96%;
   margin: 10px;
   text-align: center;
 }
 
-/* Aside styles */
+/* Sidebar styles */
 aside {
   width: 25%;
   text-align: center;
@@ -166,28 +190,7 @@ aside {
   float: right;
 }
 
-.flex {
-  display: flex;
-  width: 100%;
-  min-height: calc(100vh - 70px - 2em)
-}
-
-button {
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  width: 200px;
-}
-
 /* Form styles */
-
 input[type=text],
 input[type=password],
 input[type=email],
