@@ -6,7 +6,6 @@ export const Header = ({ text, toggleEdit, toggleSettings }) => {
           <li onClick={toggleEdit} >Edit List</li>
           <li onClick={toggleSettings} >Settings</li>
           <li>About</li>
-          <li>Log In</li>
         </ul>
       </nav>
   </header>;

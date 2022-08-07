@@ -69,6 +69,7 @@ header nav li:hover {
 /* Main styles */
 main {
   background-color: rgb(234, 255, 231);
+  min-height: 100%;
   width: 100%;
   padding: 2em;
 }
@@ -76,6 +77,11 @@ main {
 /* List styles */
 ul {
   display: block;
+}
+
+ul > p {
+  font-size: 20px;
+  text-align: center;
 }
 
 /* Park styles */
@@ -163,6 +169,7 @@ aside {
 .flex {
   display: flex;
   width: 100%;
+  min-height: calc(100vh - 70px - 2em)
 }
 
 button {
@@ -214,3 +221,8 @@ form {
     background-color: #b7ff9f;
     padding: 20px;
 }
+
+/* Debug styles */
+/* * {
+  border: 1px solid red;
+} */
