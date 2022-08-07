@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import MoreInfo from './MoreInfo.js'
 
-export const ParkItem = ({ park, toggleStatus }) => {
+export const ParkItem = ({ park, toggleStatus, deletePark }) => {
     const statusArray = ["uv", "pv", "v"]
     // const [status, setStatus] = useState(park.status)
     const [showMore, setShowMore] = useState(false)
@@ -16,11 +16,8 @@ export const ParkItem = ({ park, toggleStatus }) => {
         // setStatus(park.status)
     }
 
-    const deletePark = () => {
-        console.log("this deletes the following park:")
-        console.log(park.name)
-        console.log("ID: " + park.id)
-        console.log()
+    const onDelete = () => {
+        deletePark(park.id)
     }
 
     return (
@@ -34,7 +31,7 @@ export const ParkItem = ({ park, toggleStatus }) => {
                     <button onClick={showMoreInfo} >More Info</button>
                     <button onClick={onToggle}>Change Status</button>
                 </div>
-                {showMore && <MoreInfo deletePark={deletePark} />}
+                {showMore && <MoreInfo onDelete={onDelete} />}
             </li>
         </div>
     )

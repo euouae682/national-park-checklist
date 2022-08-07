@@ -48,11 +48,8 @@ function App() {
   }
 
   const toggleStatus = async (id) => {
-    console.log("this will toggle the status of the park");
     const parkItem = await fetchPark(id)
-    console.log(parkItem)
     const updatedPark = { ...parkItem, status: ((parkItem.status + 1) % 3) }
-    console.log(updatedPark)
 
     const res = await fetch(`http://localhost:5000/parks/${id}`, {
       method: 'PUT',
@@ -69,8 +66,12 @@ function App() {
     setParkList(parkList.map((p) => p.id === id ? {...p, status: data.status} : p));
   }
 
-  const deletePark = async (park) => {
-    console.log("this will delete the park from the list");
+  const deletePark = async (id) => {
+    const res = await fetch(`http://localhost:5000/parks/${id}`, {
+      method: 'DELETE'
+    })
+
+    setParkList(parkList.filter((p) => p.id !== id));
   }
 
   // const onSubmitEdit = (pname, ploc) => {
@@ -94,7 +95,7 @@ function App() {
       <Header text="National Park Checklist" toggleEdit={toggleEdit} toggleSettings={toggleSettings} />
       <div className="flex">
         {showEdit && <EditList onSubmitEdit={addPark} />}
-        <Main list={parkList} toggleStatus={toggleStatus} />
+        <Main list={parkList} toggleStatus={toggleStatus} deletePark={deletePark} />
         {showSettings && <Settings />}
       </div>
       <Footer text="A project by euouae" />
